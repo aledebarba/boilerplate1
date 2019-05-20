@@ -1,0 +1,13 @@
+/* defines variables */
+@import 'default-theme.css';
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    font: var(--hero) !important;
+}
+
+
