@@ -3,25 +3,21 @@ import styled from 'styled-components'
 
 const Footer = (props) => {
   return (
-    <StyledFooter className="container-fluid">
-        <div className="container">
+    <Content className="container-fluid mt-3">
+      <div className="row justify-content-center">
+            <p>This is the footer component</p>
             {props.children}
-        </div>
-    </StyledFooter>
+      </div>
+    </Content>
   )
 }
-
 export default Footer
 
-const StyledFooter = styled.div`
+const Content = styled.div`
   color: var(--body-inverse-color);
   background-color: var(--footer-bg);
   text-align: center;
-  position: absolute;
+  position: relative;
   min-height: 10vh;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  margin:0;
-  
+  padding: 20px; 
 `

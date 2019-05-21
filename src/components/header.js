@@ -1,34 +1,32 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
 const Header = ({ siteTitle }) => (
-  <Wrapper>
+  <Content>
     <h1>{siteTitle}</h1>
-    <p>Default boilerplate</p>
-    <Link to="/">Back to home</Link>
-  </Wrapper>
+    <p>This is the header.js component</p>
+  </Content>
 )
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
-
 Header.defaultProps = {
   siteTitle: `Default boilerplate`,
 }
-
 export default Header
 
-const Wrapper = props => (
-  <Content className="container-fluid hero">
-    <div className="container">{props.children}</div>
-  </Content>
+const Content = props => (
+  <ContentWithStyle className="container-fluid hero">
+    <div className="container">
+      {props.children}
+    </div>
+  </ContentWithStyle>
 )
 
-const Content = styled.div`
-  background-color: var(--header-bg);
+const ContentWithStyle = styled.div`
+  background-color: var(--header-bg); 
   height: 30vh;
+  overflow: hidden;
   padding: 1rem 0;
 `

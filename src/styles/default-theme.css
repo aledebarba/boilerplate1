@@ -7,6 +7,7 @@
 --display-font-face: 'Alfa Slab One', Georgia, 'Times New Roman', Times, serif;
 --body-font-face: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 
+/* sizes */
 --xs: 0.5rem;
 --s: 0.8rem;
 --m: 1rem;
@@ -15,16 +16,16 @@
 --xxl: 3rem;
 
 /* font shorthand font-style font-variant font-weight font-size/line-height font-family; */
---hero: normal normal normal var(--xxl)/140% var(--display-font-face);
---h1: normal normal normal var(--xl)/110% var(--display-font-face);
---h2: normal normal normal var(--l)/110% var(--display-font-face);
---h3: normal normal normal var(--m)/100% var(--display-font-face);
---h4: normal normal bold var(--m)/100% var(--body-font-face);
---body: normal normal normal var(--m)/120% var(--body-font-face);
---link: normal normal normal var(--m)/100% var(--body-font-face);
---caption: normal normal normal var(--s)/100% var(--body-font-face);
---overline: normal small-caps bold var(--xs)/100% var(--body-font-face);
---button: normal small-caps bold var(--s)/100% var(--body-font-face);
+--hero: normal normal normal var(--xxl)/160% var(--display-font-face);
+--h1: normal normal normal var(--xl)/140% var(--display-font-face);
+--h2: normal normal normal var(--l)/140% var(--display-font-face);
+--h3: normal normal normal var(--m)/140% var(--display-font-face);
+--h4: normal normal normal var(--s)/120% var(--display-font-face);
+--body: normal normal normal var(--m)/135% var(--body-font-face);
+--link: normal normal normal var(--m)/120% var(--body-font-face);
+--caption: normal normal normal var(--s)/110% var(--body-font-face);
+--overline: normal small-caps bold var(--xs)/110% var(--body-font-face);
+--button: normal small-caps bold var(--s)/110% var(--body-font-face);
 
 /* text colors */
 --default-text-color: black;
@@ -33,7 +34,7 @@
 --body-inverse-color: white;
 --header-color: rgb(255, 102, 0);
 --header-inverse-color: rgb(255, 255, 255);
---hero-color: midnightblue;
+--hero-color: rgb(138, 0, 0);
 --hero-inverse-color:lightsteelblue;
 --link-color: indigo;
 --link-hover-color: darkviolet;
@@ -81,9 +82,36 @@
     color: var(--link-hover-inverse-color);
     
 }
-h1 {
-    font: var(--h1) !important;
+p, ul, li {
+    font: var(--body);
     margin: 0;
     padding: 0;
-    color: var(--header-color) !important;
+    color: var(--body-color);
 }
+
+h1 {
+    font: var(--h1);
+    margin: 0;
+    padding: 0;
+    color: var(--header-color);
+}
+h2 {
+    font: var(--h2);
+    margin: 0;
+    padding: 0;
+    color: var(--header-color);
+}
+h3 {
+    font: var(--h3);
+    margin: 0;
+    padding: 0;
+    color: var(--header-color);
+}
+h4 {
+    font: var(--h4);
+    margin: 0;
+    padding: 0;
+    color: var(--header-color);
+}
+
+
